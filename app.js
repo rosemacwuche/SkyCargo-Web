@@ -14,7 +14,7 @@ const session = require('express-session');
 
 app.set('trust proxy', 1);
 app.use(session({
-    secret: 'this is my secretkey',
+    secret: process.env.SESSION_SECRET || 'this is my secretkey',
     resave: false,
     cookie:{secure: true,maxAge: 1000 * 60 },
     saveUninitialized: true,
