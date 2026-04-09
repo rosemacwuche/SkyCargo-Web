@@ -30,22 +30,6 @@ router.get("/", async(req, res) => {
     }
 })
 
-router.get("/validate", async(req, res) => {
-    try {
-        const accessdata = await access (req.user)
-
-        const data = await mySqlQury(`SELECT * FROM tbl_general_settings`)
-        console.log(data);
-
-        const customer_data = await mySqlQury(`SELECT * FROM tbl_customers WHERE customer_active = '1' ORDER BY id LIMIT 1`)
-        console.log(customer_data);
-        
-        res.render("validate", {data, customer_data, accessdata})
-    } catch (error) {
-        console.log(error);
-    }
-})
-
 
 router.post("/", async(req, res) => {
     try {
