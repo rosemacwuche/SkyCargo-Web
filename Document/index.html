@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;family=Poppins:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+
+        <title>SkyCargo. - on NodeJS</title>
+    </head>
+    <body>
+        <div class="doc_sidebar_wrapper">
+            <!--sidebar start-->
+            <div class="logo_wrapper">
+                <div class="doc_logo">
+                    <img src="assets/images/logo.png" alt="logo" />
+                </div>
+            </div>
+            <div class="doc_sidebar_inner">
+                <div class="menu_inner">
+                    <ul>
+                        <li data-number="1" class="menu_item main_menu active">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="m446.604 124.392-119.996-119.997c-2.846-2.847-6.735-4.395-10.608-4.395h-210c-24.813 0-45 20.187-45 45v422c0 24.813 20.187 45 45 45h300c24.813 0 45-20.187 45-45v-332c0-4.116-1.743-7.957-4.396-10.608zm-115.604-73.179 68.787 68.787h-53.787c-8.271 0-15-6.729-15-15zm75 430.787h-300c-8.271 0-15-6.729-15-15v-422c0-8.271 6.729-15 15-15h195v75c0 24.813 20.187 45 45 45h75v317c0 8.271-6.729 15-15 15z"
+                                            />
+                                            <path d="m346 242h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 302h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 362h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <circle cx="136" cy="257" r="15" />
+                                            <circle cx="136" cy="317" r="15" />
+                                            <circle cx="136" cy="377" r="15" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Introduction</span>
+                            </a>
+                        </li>
+
+                        <li data-number="2" class="menu_item main_menu active">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="m446.604 124.392-119.996-119.997c-2.846-2.847-6.735-4.395-10.608-4.395h-210c-24.813 0-45 20.187-45 45v422c0 24.813 20.187 45 45 45h300c24.813 0 45-20.187 45-45v-332c0-4.116-1.743-7.957-4.396-10.608zm-115.604-73.179 68.787 68.787h-53.787c-8.271 0-15-6.729-15-15zm75 430.787h-300c-8.271 0-15-6.729-15-15v-422c0-8.271 6.729-15 15-15h195v75c0 24.813 20.187 45 45 45h75v317c0 8.271-6.729 15-15 15z"
+                                            />
+                                            <path d="m346 242h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 302h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 362h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <circle cx="136" cy="257" r="15" />
+                                            <circle cx="136" cy="317" r="15" />
+                                            <circle cx="136" cy="377" r="15" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Basic</span>
+                            </a>
+                        </li>
+
+                        <li data-number="3" class="menu_item main_menu active">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg id="Capa_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <path
+                                                d="m446.604 124.392-119.996-119.997c-2.846-2.847-6.735-4.395-10.608-4.395h-210c-24.813 0-45 20.187-45 45v422c0 24.813 20.187 45 45 45h300c24.813 0 45-20.187 45-45v-332c0-4.116-1.743-7.957-4.396-10.608zm-115.604-73.179 68.787 68.787h-53.787c-8.271 0-15-6.729-15-15zm75 430.787h-300c-8.271 0-15-6.729-15-15v-422c0-8.271 6.729-15 15-15h195v75c0 24.813 20.187 45 45 45h75v317c0 8.271-6.729 15-15 15z"
+                                            />
+                                            <path d="m346 242h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 302h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <path d="m346 362h-150c-8.284 0-15 6.716-15 15s6.716 15 15 15h150c8.284 0 15-6.716 15-15s-6.716-15-15-15z" />
+                                            <circle cx="136" cy="257" r="15" />
+                                            <circle cx="136" cy="317" r="15" />
+                                            <circle cx="136" cy="377" r="15" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Server</span>
+                            </a>
+                        </li>
+
+                        <li data-number="4" class="menu_item main_menu">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Mysql Database Setup</span>
+                            </a>
+                        </li>
+
+                        <li data-number="5" class="menu_item main_menu">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m369.164062 174.769531c7.8125 7.8125 7.8125 20.476563 0 28.285157l-134.171874 134.175781c-7.8125 7.808593-20.472657 7.808593-28.285157 0l-63.871093-63.875c-7.8125-7.808594-7.8125-20.472657 0-28.28125 7.808593-7.8125 20.472656-7.8125 28.28125 0l49.730468 49.730469 120.03125-120.035157c7.8125-7.808593 20.476563-7.808593 28.285156 0zm142.835938 81.230469c0 141.503906-114.515625 256-256 256-141.503906 0-256-114.515625-256-256 0-141.503906 114.515625-256 256-256 141.503906 0 256 114.515625 256 256zm-40 0c0-119.394531-96.621094-216-216-216-119.394531 0-216 96.621094-216 216 0 119.394531 96.621094 216 216 216 119.394531 0 216-96.621094 216-216zm0 0"
+                                        />
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Node Js Web App</span>
+                            </a>
+                        </li>
+
+                        <li data-number="6" class="menu_item main_menu">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M512,197.819l-185.933-12.228L256,9.571l-70.067,176.021L0,197.82l142.658,120.93L95.856,502.429L256,401.214 l160.144,101.215l-46.8-183.671L512,197.819z M256,365.724l-112.464,71.08l32.827-128.831L75.829,222.888l130.971-8.603 L256,90.687l49.2,123.599l131.124,8.602l-100.689,85.077l32.829,128.839L256,365.724z"
+                                                />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span class="title_spn">Features</span>
+                            </a>
+                        </li>
+
+                        <li data-number="7" class="menu_item main_menu">
+                            <a href="javascript:;" class="menu_link">
+                                <span class="svg_spn">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 512 512">
+                                        <g>
+                                            <g><path d="M464.707,457l-194-432h-29.58l-186,432H0v30h160v-30H87.79l47.792-111h176.392l49.847,111H312v30h200v-30H464.707z M148.498,316l73.423-170.53L298.501,316H148.498z" /></g>
+                                        </g>
+                                    </svg>
+                                </span>
+
+                                <span class="title_spn">Outro</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar_ovelay toggle_btn"></div>
+        <!--sidebar end-->
+
+        <div class="doc_main_wrapper">
+            <!--doc_main_wrapper start-->
+            <div class="main__inner_wrapper">
+                <!--main__inner_wrapper start-->
+                <!-- Header start -->
+                <div class="doc_header_wrapper">
+                    <div class="container-fluid">
+                        <div class="doc_header_inner">
+                            <div class="doc_left_wrap">
+                                <div class="toggle_btn">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270 270">
+                                        <g>
+                                            <g><path d="M114,0H10C4.5,0,0,4.5,0,10v104c0,5.5,4.5,10,10,10h104c5.5,0,10-4.5,10-10V10C124,4.5,119.5,0,114,0z M104,104H20V20h84 V104z" /></g>
+                                        </g>
+                                        <g>
+                                            <g><path d="M260,0H156c-5.5,0-10,4.5-10,10v104c0,5.5,4.5,10,10,10h104c5.5,0,10-4.5,10-10V10C270,4.5,265.5,0,260,0z M250,104h-84 V20h84V104z" /></g>
+                                        </g>
+                                        <g>
+                                            <g><path d="M114,146H10c-5.5,0-10,4.5-10,10v104c0,5.5,4.5,10,10,10h104c5.5,0,10-4.5,10-10V156C124,150.5,119.5,146,114,146z M104,250H20v-84h84V250z" /></g>
+                                        </g>
+                                        <g>
+                                            <g><path d="M260,146H156c-5.5,0-10,4.5-10,10v104c0,5.5,4.5,10,10,10h104c5.5,0,10-4.5,10-10V156C270,150.5,265.5,146,260,146z M250,250h-84v-84h84V250z" /></g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="ceated_info">
+                                    <ul>
+                                        <li>Updated : 18 July 2023</li>
+                                        <li><strong>Contact Our Support Team Email: </strong><a class="word_break" href="mailto:cherrystuart83@gmail.com">cherrystuart83@gmail.com</a></li>
+                                        <li><strong>Skype: </strong><a class="word_break" href="https://join.skype.com/invite/fbnQtaWO3j7c">KMS Agency</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header End -->
+                <div class="doc_content_wrapper">
+                    <!--doc_content_wrapper start-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- 1 section Introduction -->
+                                <div class="main_section" data-scroll="1">
+                                    <header><h1 class="mb-3">Introduction</h1></header>
+									<p>Thank you for your interest in <b>SkyCargo.</b></p>
+									
+                                    <p>
+                                        An integrated transportation system for freight shipping, courier services, and logistics is essential for any business that relies on the timely delivery of goods. Such a system can help streamline operations, reduce costs, and improve customer satisfaction by providing reliable and efficient transport of goods. One of the main benefits of such a system is the ability to track shipments in real-time, allowing businesses to better manage inventory and provide accurate delivery estimates to customers. This helps to ensure timely deliveries and reduces the risk of lost or stolen packages.
+                                    </p>
+                                    <p>
+                                        Another key advantage of an integrated transportation system is the ability to optimize routes and schedules for maximum efficiency. By combining different modes of transportation, such as air, sea, and land, businesses can minimize costs while maintaining high levels of service. Additionally, a well-designed system can help reduce the environmental impact of transportation by minimizing empty trips and reducing fuel consumption.
+
+                                    </p>
+                                    <p>
+                                        
+In order to implement an effective integrated transportation system, businesses must partner with experienced logistics providers who can offer a wide range of services and expertise. These providers should have a deep understanding of the industry and be able to tailor solutions to meet the specific needs of each client. With the right partner, businesses can enjoy the benefits of a reliable, efficient, and cost-effective transportation system that meets the demands of modern commerce.
+                                    </p>
+									
+									<h3><b>Shipping Rate</b></h3>
+									
+									<p>Shipping rate refers to the amount charged for transporting goods from one location to another. Shipping rates can vary based on a number of factors, such as the weight and size of the item being shipped, the destination it is being sent to, the shipping method chosen, and any additional services requested (such as expedited shipping or insurance). In general, shipping rates are calculated based on a combination of these variables and may be structured as flat fees, tiered pricing, or based on actual shipping costs. The shipping rate may also include any applicable taxes or surcharges.</p>
+                                
+								<h3><b>Shipping</b></h3>
+								
+								<p>Shipping refers to the process of transporting goods from one location to another. This can involve moving products from a manufacturer or supplier to a retailer, distributing products to individual customers, or transferring inventory between different warehouses or storage facilities. The shipping process typically involves a variety of steps, including packaging and labeling items for transport, arranging transportation services, tracking shipments as they move through various stages of the delivery process, and ensuring that goods are delivered to their intended destination on time and in good condition. There are many different modes of transportation used for shipping, including trucks, ships, trains, and airplanes, and each has its own unique advantages and limitations depending on the type of cargo being transported and the distance it needs to travel.</p>
+								
+								<h3><b>Consolidated</b></h3>
+								<ul>
+								<li>Consolidated shipping, also known as freight consolidation, involves combining multiple smaller shipments from different sources into a larger shipment that is sent to a common destination. The purpose of this approach is to reduce the overall shipping costs and improve efficiency in the logistics process.</li>
+								<li>When businesses use consolidated shipping, they typically work with a third-party logistics provider (3PL) who specializes in consolidating freight. The 3PL will take care of the entire logistics operation, including coordinating with different suppliers to collect the individual shipments, consolidating them into a single shipment, and delivering the final shipment to the destination.</li>
+								<li>There are several benefits to using consolidated shipping. First, it allows businesses to save money on shipping costs by reducing the number of individual shipments and taking advantage of bulk rates. This can be especially beneficial for small businesses that may not have the volume of shipments necessary to qualify for discounted rates.</li>
+								<li>Second, consolidated shipping can help streamline the logistics process, reducing the burden on internal resources and freeing up staff to focus on other critical business operations.</li>
+								<li>Finally, consolidated shipping can also help businesses reduce their carbon footprint by minimizing the number of individual shipments and thus reducing overall transportation emissions.</li>
+								<li>Overall, the consolidated feature is an important tool for businesses looking to improve their shipping operations while keeping costs under control. By working with a qualified 3PL provider, businesses can take advantage of this approach and reap the benefits of more efficient, cost-effective shipping.</li>
+								</ul>
+								<h3><b>Notification</b></h3>
+								<ul>
+<li>Notifications are an important tool for keeping customers, clients, and drivers informed about the status of their shipments. These alerts can be sent via various channels such as email, text message, or push notifications through a mobile app.</li>
+<li>In the logistics industry, notifications may include updates on the shipping status, estimated delivery times, delays, or changes to the shipment's route or destination. For example, a customer might receive a notification when their package has been picked up by the carrier, when it reaches a sorting facility, when it is out for delivery, or when it has been delivered to its final destination.</li>
+<li>Notifications can also be customized based on the preferences of the recipient. For instance, some customers may prefer to receive regular updates throughout the shipping process, while others may only want to be notified if there is a delay or issue with their shipment.</li>
+<li>The use of notifications can help improve customer satisfaction by providing timely, accurate information about the status of their shipments. It can also help reduce the number of inquiries or support requests related to the shipment, as customers will have access to real-time updates via their preferred communication channel.</li>
+<li>Overall, notifications are an essential feature in modern logistics operations, enabling businesses to keep their customers, clients, and drivers informed and engaged throughout the shipping process.</li>
+</ul>
+
+
+								</div>
+                            </div>
+                        </div>
+
+                        <div class="main_section" data-scroll="2">
+                            <h2>Basic</h2>
+                            <p>As SkyCargo is a complete system with lots of modules for web , it is compulsory to have some basic knowledge in server side if you want to do the installation.</p>
+                            <ul>
+                                <li>Real server Server related knowledge like apache or local machine server, we preferred to use a real server.</li>
+                                <li>Server related knowledge and we preferred cPanel in your server for quick installation</li>
+                                <li>basic knowledge about google cloud and firebase.</li>
+                            </ul>
+
+                            <div class="alert alert--danger admonition">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        warning
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>
+                                        The Envato price don’t included any kind of installation and deploy support. You need to follow the documentation step by step for installation, setup and other branding related changes. We are not
+                                        responsible for your mistake. Also if you do any kind of customization it is totally your responsibility.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main_section" data-scroll="3">
+                            <h2>Server</h2>
+                            <p>Require For Setup Node js And Run Properly.</p>
+                            <ul>
+                                <li>SkyCargo require node js version 16 and above.</li>
+                                <li>Require Node Module Folder</li>
+                            </ul>
+
+                            <div class="alert alert--danger admonition">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        warning
+                                    </h5>
+                                </div>
+                                <div class="admonition-content"><p>Please do this very carefully. We will not be responsible for your mistake.</p></div>
+                            </div>
+                            <div class="alert alert--danger admonition">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        Must Required Sub Domain
+                                    </h5>
+                                </div>
+                                <div class="admonition-content"><p>Our code is designed to be fully compatible and supported only on subdomains, such as https://subdomain.yourdomainname.com. It cannot be installed on the root domain or any additional paths, like https://www.yourdomainname.com/admin. Additionally, it is not compatible with localhost or any private DNS zones.</p></div>
+                            </div>
+                        </div>
+
+                        <div class="main_section" data-scroll="4">
+                            <h2>Install on server</h2>
+                            <h3>1. Database Configuration</h3>
+                            <p><strong>Before starting the admin installation, database must be configured for the application.</strong></p>
+							<p>For creating the database, the following ways must be maintained-</p>
+
+                           <ul><li>Go to <strong>MySQL Databases</strong></li></ul>
+						   <div style="display: flex; justify-content: center; padding-bottom: 5%;"><img src="assets/images/node/step-1.png" style="width: 70%; height: auto; text-align: center; border-radius: 8px;"></div>
+                        <ul><li>Create a new database for the application</li></ul>
+						<div style="display: flex; justify-content: center; padding-bottom: 5%;"><img src="assets/images/node/step-2.png" style="width: 70%; height: auto; text-align: center; border-radius: 8px;"></div>
+						
+						<ul><li>Create a user for the database</li></ul>
+						<div style="display: flex; justify-content: center; padding-bottom: 5%;"><img src="assets/images/node/step-3.png" style="width: 70%; height: auto; text-align: center; border-radius: 8px;"></div>
+						
+						<div class="admonition admonition-warning alert alert--danger"><div class="admonition-heading"><h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>warning</h5></div><div class="admonition-content"><p>Avoid using hash ("#" or "$") in your password</p></div></div>
+						
+						<ul><li>Add the user to the database</li></ul>
+						<div style="display: flex; justify-content: center; padding-bottom: 5%;"><img src="assets/images/node/step-4.png" style="width: 70%; height: auto; text-align: center; border-radius: 8px;"></div>
+						<ul><li>Give privileges to the user</li></ul>
+						<div style="display: flex; justify-content: center; padding-bottom: 5%;"><img src="assets/images/node/step-5.png" style="width: 70%; height: auto; text-align: center; border-radius: 8px;"></div>
+						
+                        </div>
+
+                        <div class="main_section" data-scroll="5">
+                            <h1 class="doc_title01">Node Js Web App</h1>
+                            <h4><b>Prerequisite</b></h4>
+
+                            <ul>
+                                <li>
+                                    <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener noreferrer">Vs code</a> or
+                                    <a href="https://www.jetbrains.com/help/webstorm/installation-guide.html" target="_blank" rel="noopener noreferrer">Webstorm</a>.
+                                </li>
+                                <li><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">Nodejs</a></li>
+                                <li><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">Npm</a></li>
+                                <li><a href="https://classic.yarnpkg.com/en/docs/install" target="_blank" rel="noopener noreferrer">Yarn</a> (Mandatory)</li>
+                            </ul>
+
+                            <h4><b>Environment Setup</b></h4>
+                            <p>You have to download and setup node js from nodejs.org. You can follow documentation with your own device.</p>
+
+                            <h3><b>Installing Node js</b></h3>
+
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>Recommended link is here -</p>
+                                    <p><a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">https://nodejs.org/en/download</a></p>
+                                </div>
+                            </div>
+
+                            <p>
+                                Great!! As now you have installed the <a href="https://nodejs.org/en/download" target="_blank" rel="noopener noreferrer">NodeJs</a> successfully, now you just have to install NPM or Yarn. Below we have given
+                                the easy documentation.
+                            </p>
+
+                            <h3><b>Installing npm</b></h3>
+
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>You can check the official documentation -</p>
+                                    <p><a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm" target="_blank" rel="noopener noreferrer">https://docs.npmjs.com/downloading-and-installing-node-js-and-npm</a></p>
+                                </div>
+                            </div>
+
+                            <pre class="language-javascript" tabindex="0"><code class="language-javascript">sudo apt install -g npm</code><button>Copy Code</button></pre>
+
+                            <p class="mt-3">And,</p>
+
+                            <h3><b>Installing Yarn</b></h3>
+
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>You can check the official documentation -</p>
+                                    <p><a href="https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable" target="_blank" rel="noopener noreferrer">https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable</a></p>
+                                </div>
+                            </div>
+
+                            <pre class="language-javascript" tabindex="0"><code class="language-javascript">npm install --global yarn</code><button>Copy Code</button></pre>
+
+                            <h3 class="mt-3"><b>Mandatory Setup (Web)</b></h3>
+
+                            <h6><b>1. Add Twilio Account Details For Getting SMS</b></h6>
+                            <p>To get the Twilio Auth Token, Phone Number, and Account SID, you will need to follow these steps:</p>
+                            <ul>
+                                <li>Go to the Twilio website and sign up for an account if you haven't already done so.
+								<div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>You can Register On Twilio Here</p>
+                                    <p><a href="https://www.twilio.com/" target="_blank" rel="noopener noreferrer">https://www.twilio.com/</a></p>
+                                </div>
+                            </div>
+								</li>
+                                <li>Once you are signed in, go to the console dashboard. Here you will see your Account SID and a button to reveal your Auth Token.</li>
+                                <li>To get a phone number, click "Phone Numbers" in the navigation bar, then select "Buy a Number". You can choose from a variety of phone numbers from different countries and regions.</li>
+                                <li>Follow the prompts to purchase a phone number and assign it to your project.</li>
+                                <li>After purchasing a phone number, you can find it under the "Active Numbers" section in the "Phone Numbers" tab of the console.</li>
+                            </ul>
+                            <p>
+                                Note that the Auth Token is a sensitive piece of information, and you should never share it with anyone. Keep it safe and secure. Additionally, make sure to use your purchased phone number according to
+                                Twilio's terms of service and applicable laws and regulations.
+                            </p>
+
+                            <h6><b>2. Onesignal Web Push Notification</b></h6>
+
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>You can Register On Onesignal Here</p>
+                                    <p><a href="https://onesignal.com/" target="_blank" rel="noopener noreferrer">https://onesignal.com/</a></p>
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li>Sign up for a free account on the OneSignal website.</li>
+                                <li>Once you are signed in, create a new app and select "Web Push" as your platform. You will be prompted to enter some basic information about your app.</li>
+                                <li>After configuring your web push settings, download and install the OneSignal SDK into your website code. You can find detailed instructions on how to do this in the OneSignal documentation</li>
+                            </ul>
+
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>Web Push Onesignal Notification</p>
+                                    <p><a href="https://documentation.onesignal.com/docs/web-push-quickstart" target="_blank" rel="noopener noreferrer">https://documentation.onesignal.com/docs/web-push-quickstart</a></p>
+                                </div>
+                            </div>
+
+                            <p>
+                                It's important to note that web push notifications may not be supported on all browsers and devices, so it's a good idea to test your implementation thoroughly before launching it to your users. Additionally,
+                                you should always respect users' preferences and only send notifications that are relevant and valuable to them.
+                            </p>
+
+                            <h6><b>3. SMTP Setup </b></h6>
+                            <p>
+                                To obtain SMTP configuration information including the host, port, username, and password, you will need to contact your email service provider. The exact steps to do this may vary depending on the provider,
+                                but in general, you should be able to find this information in your email account settings or by contacting your provider's customer support.
+                            </p>
+                            <p>Here are some basic steps you can follow to find your SMTP configuration information:</p>
+
+                            <ul>
+                                <li>Log in to your email account using your email client or webmail interface.</li>
+                                <li>Look for the "Settings" or "Preferences" option in your email account menu.</li>
+                                <li>Find the section on SMTP (outgoing) server settings. This may be labeled as "SMTP Server," "Outgoing Mail Server," or something similar.</li>
+                                <li>
+                                    Here, you should see the hostname or IP address of the SMTP server, as well as the port number used for outgoing mail. You may also see options for authentication and encryption, which will determine
+                                    whether you need to provide a username and password, and whether the connection is secured with SSL/TLS.
+                                </li>
+                                <li>
+                                    If you cannot find the SMTP configuration information in your account settings, you may need to contact your email service provider's customer support. They should be able to provide you with the
+                                    necessary details to configure your email client or application.
+                                </li>
+                            </ul>
+                            <p>Remember to keep your SMTP credentials secure and not share them with anyone else.</p>
+
+                            <br />
+                            <div class="admonition admonition-tip alert alert--success">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        tip
+                                    </h5>
+                                </div>
+                                <div class="admonition-content"><p>Recommended tutorial is below for cpanel with have setup node js 👇</p></div>
+                            </div>
+                            <iframe
+                                width="100%"
+                                height="400"
+                                src="https://www.youtube.com/embed/emDCYo5Rz0E"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+
+                            <h3 class="mt-3"><b>Site Build and Deploy</b></h3>
+                            <h4><b>1.Deploy in Your Own Server Like Vps Or Dedicated Server</b></h4>
+
+                            <h6><b>1.1 Package Installation</b></h6>
+                            <p>To install node_module , run the following command</p>
+                            <pre class="language-javascript" tabindex="0"><code class="language-javascript">npm install </code><button>Copy Code</button></pre>
+
+                            <div class="admonition admonition-caution alert alert--warning">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        Mandatory
+                                    </h5>
+                                </div>
+                                <div class="admonition-content">
+                                    <p>Make sure you have <code>node_modules</code> installed in your directory.</p>
+                                </div>
+                            </div>
+                            <p>The above command will install all the node modules in your directory.</p>
+
+                            <h6><b>1.2 Project Run On background</b></h6>
+                            <ul>
+                                <li>
+                                    Install PM2 in your server
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">npm install pm2 -g</code><button>Copy Code</button></pre>
+                                </li>
+
+                                <li>
+                                    To run the site in your server, you have to run the PM2 command given below
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">pm2 start npm --name "`YOUR_PROJECT_NAME`" -- start</code><button>Copy Code</button></pre>
+                                </li>
+
+                                <li>
+                                    To re-deploy your site after some changes, you must run the following commands
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">pm2 delete "YOUR_PROJECT_NAME"
+pm2 start npm --name "YOUR_PROJECT_NAME" -- start</code><button>Copy Code</button></pre>
+                                </li>
+                            </ul>
+
+                            <div class="admonition admonition-caution alert alert--warning">
+                                <div class="admonition-heading">
+                                    <h5>
+                                        <span class="admonition-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        MANDATORY
+                                    </h5>
+                                </div>
+                                <div class="admonition-content"><p>Must follow the above instructions</p></div>
+                            </div>
+
+                            <h4><b>2.Deploy to Vercel</b></h4>
+                            <p>Deploying a Node.js app to Vercel is a fairly straightforward process, and can be done in just a few steps.</p>
+                            <p>Here's what you'll need to do:</p>
+                            <ul>
+                                <li>
+                                    Sign up for a Vercel account.
+                                    <div class="admonition admonition-tip alert alert--success">
+                                        <div class="admonition-heading">
+                                            <h5>
+                                                <span class="admonition-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"
+                                                        ></path>
+                                                    </svg>
+                                                </span>
+                                                tip
+                                            </h5>
+                                        </div>
+                                        <div class="admonition-content">
+                                            <p>Web Push Onesignal Notification</p>
+                                            <p><a href="https://vercel.com/signup" target="_blank" rel="noopener noreferrer">https://vercel.com/signup</a></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    Install the Vercel CLI by running the following command in your terminal:
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">npm install -g vercel</code><button>Copy Code</button></pre>
+                                </li>
+
+                                <li>
+                                    Navigate to the root directory of your Node.js app and run the following command to initialize your Vercel project:
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">vercel init</code><button>Copy Code</button></pre>
+                                </li>
+
+                                <li>Follow the prompts to link your Vercel account and select your project.</li>
+                                <li>
+                                    After the initialization is complete, run the vercel deploy command to deploy your app to Vercel:
+                                    <pre class="language-javascript" tabindex="0"><code class="language-javascript">vercel deploy</code><button>Copy Code</button></pre>
+                                </li>
+
+                                <li>
+                                    The deployment process will begin, and you'll be given a URL where your app can be accessed once it's deployed.
+                                </li>
+                            </ul>
+                            <p>
+                                That's it! Your Node.js app should now be up and running on Vercel. If you need to make any updates or changes, simply push your changes to your code repository and Vercel will automatically redeploy your
+                                app.
+                            </p>
+                        </div>
+
+                        <!-- 2.section Features -->
+                        <div class="main_section" data-scroll="6">
+                            <h1 class="mb-3">Features information</h1>
+                            <ul class="ul_style1">
+                                <li>
+                                    <b>Dashboard:</b>
+                                    <p>
+                                        The dashboard feature in SkyCargo is a central hub that provides users with an overview of their shipping activities and allows them to manage shipments, orders, and other important data. The
+                                        dashboard is designed to be user-friendly and easy to navigate, providing users with a visual representation of the most important information related to their shipments.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/01_preview1.png" />
+                                <li>
+                                    <b>Pre Alert:</b>
+                                    <p>
+                                        Shipping pre-alert is a feature that allows a shipping company to notify the consignee or recipient of an upcoming shipment. It provides advanced notice of the shipment, giving the recipient time to
+                                        prepare for its arrival.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/02_preview2.png" />
+                                <li>
+                                    <b>Shipping:</b>
+                                    <p>
+                                        Shipping is the process of transporting goods or products from one location to another. Shipping features in a management system like SkyCargo typically include tools and functions that help
+                                        businesses manage and optimize their shipping processes.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/03_preview3.png" />
+                                <li>
+                                    <b>Pickups:</b>
+                                    <p>
+                                        The pickup feature is a tool that allows businesses to schedule pickups for their shipments directly from their location. With this feature, businesses no longer have to worry about dropping off
+                                        packages at a carrier's location or waiting in long lines to ship their products.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/04_preview4.png" />
+                                <li>
+                                    <b>Consolidated:</b>
+                                    <p>
+                                        The consolidated feature is a tool that allows businesses to combine multiple shipments into a single shipment for more efficient and cost-effective shipping. With this feature, businesses can save
+                                        money by reducing the number of individual shipments they need to make, while also streamlining their logistics operations.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/05_preview5.png" />
+                                <li>
+                                    <b>List of payment:</b>
+                                    <p>Payment processing involves securely collecting payment information from the user, verifying that the payment details are correct, and authorizing the transaction.</p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/06_preview6.png" />
+                                <li>
+                                    <b>Customer/Client/Driver:</b>
+                                    <p>In a shipping management system like SkyCargo, there are typically three main roles: customer, client, and driver.</p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/07_preview7.png" />
+                                <li>
+                                    <b>Reports:</b>
+                                    <p>
+                                        This report is used to provide advance notice to carriers and customs agents about incoming shipments. It typically includes information such as the shipper and consignee details, package dimensions,
+                                        weight, value, and any special handling instructions.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/08_preview8.png" />
+                                <li>
+                                    <b>Shipping Taxes & fees:</b>
+                                    <p>
+                                        Shipping taxes are government-imposed charges that are added to the cost of shipping goods. These taxes can vary depending on the country or region where the shipment is being sent from and where it
+                                        is being delivered to.
+                                    </p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/09_preview9.png" />
+                                <li>
+                                    <b>Shipping Rate:</b>
+                                    <p>Shipping rates are the charges that are applied by carriers or logistics providers for transporting goods from one location to another.</p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/10_preview10.png" />
+                                <li>
+                                    <b>Notification:</b>
+                                    <p>Notifications are alerts or messages that are sent to customers, clients, or drivers to keep them informed about the status of their shipments.</p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/11_preview11.png" />
+                                <li>
+                                    <b>Setting:</b>
+                                    <p>Settings are configurable options that allow businesses to customize the behavior and functionality of their shipping management system.</p>
+                                </li>
+                                <img class="mb-3" alt="images" src="assets/images/ss/12_preview12.png" />
+                            </ul>
+                            <strong>
+                                Like our work don't forget to rate it <a href="http://themeforest.net/downloads" target="_blank" title="Click to rate"><img class="start_img" alt="images" src="assets/images/5star.png" /></a>
+                            </strong>
+                        </div>
+                        <!-- 3.section Code Structure -->
+
+                        <!-- 5. sub section How to Use -->
+                    </div>
+
+                    <!-- 6.section Java Scripts -->
+                    <div class="main_section" data-scroll="7">
+                        <h1 class="mb-3">Outro</h1>
+                        <p>Thank you for your purchase. If you have any questions that are beyond the scope of this help file, please contact us through <strong>cherrystuart83@gmail.com</strong></p>
+
+                        <p>
+                            Once again, thank you so much for purchasing this script. As I said at the beginning, I'd be glad to help you if you have any questions relating to this script. No guarantees, but I'll do my best to assist. If
+                            you have a more general question relating to the script, you might consider visiting the forums and asking your question in the "Item Discussion" section.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="assets/js/jquery-3.1.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
